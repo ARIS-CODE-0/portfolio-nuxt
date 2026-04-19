@@ -7,8 +7,8 @@
     
     <div class="grid grid-cols-1 gap-10 md:grid-cols-3">
       <div v-for="project in projects" :key="project.name" class="group cursor-pointer">
-        <div class="relative overflow-hidden rounded-3xl bg-mocha-medium/20 aspect-video mb-6 border border-mocha-medium/30 group-hover:border-mocha-dark transition-all duration-300">
-          <div class="absolute inset-0 flex items-center justify-center text-mocha-dark/30 font-serif text-4xl">{{ project.name }}</div>
+        <div class="relative overflow-hidden rounded-3xl aspect-video mb-6 border border-mocha-medium/30 group-hover:border-mocha-dark transition-all duration-300">
+          <img :src="project.image" :alt="project.name" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
           <div class="absolute inset-0 bg-mocha-dark/0 group-hover:bg-mocha-dark/10 transition-all duration-300"></div>
         </div>
         <h3 class="text-xl font-bold text-mocha-deep group-hover:text-mocha-dark transition">{{ project.name }}</h3>
@@ -20,8 +20,8 @@
 
 <script setup>
 const projects = [
-  { name: 'TIPA', description: 'Plateforme de dons innovante dédiée au soutien des créateurs congolais.' },
-  { name: 'Kash', description: 'Application intuitive de traqueur de dépenses pour une gestion financière optimisée.' },
-  { name: 'Arislabs', description: 'Site vitrine stratégique pour le lancement de ma future startup tech.' }
+  { name: 'TIPA', description: 'Plateforme de dons innovante dédiée au soutien des créateurs congolais.', image: '/images/tipa.png' },
+  { name: 'Kash', description: 'Application intuitive de traqueur de dépenses pour une gestion financière optimisée.', image: '/images/kash.png' },
+  { name: 'Arislabs', description: 'Site vitrine stratégique pour le lancement de ma future startup tech.', image: '/images/arislabs.png' }
 ]
 </script>
