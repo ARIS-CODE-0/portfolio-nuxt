@@ -12,5 +12,5 @@
 </template>
 
 <script setup>
-const techs = ['HTML5', 'CSS3', 'JavaScript (ES6+)', 'Node.js', 'Express.js', 'MongoDB', 'Nuxt.js / Vue.js']
+const techs = ['HTML5', 'CSS3', 'JavaScript (ES6+)', 'Node.js', 'Express.js', 'MongoDB', 'Nuxt.js / Vue.js', 'Tailwind CSS', 'daisyUI']
 </script>
