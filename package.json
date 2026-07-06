@@ -1,5 +1,8 @@
 {
   "name": "portfolio-nuxt",
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "type": "module",
   "private": true,
   "scripts": {
